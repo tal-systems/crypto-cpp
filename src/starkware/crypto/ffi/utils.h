@@ -5,7 +5,7 @@
 
 #include "starkware/crypto/pedersen_hash.h"
 
-#include "third_party/gsl/gsl-lite.hpp"
+#include "gsl/gsl-lite.hpp"
 
 namespace starkware {
 

@@ -1,13 +1,17 @@
 cmake_minimum_required (VERSION 3.5)
-if (NOT DEFINED CMAKE_CXX_COMPILER)
-  set(CMAKE_CXX_COMPILER /usr/bin/clang++-6.0)
-endif()
+# if (NOT DEFINED CMAKE_CXX_COMPILER)
+#   set(CMAKE_CXX_COMPILER /usr/bin/clang++-6.0)
+# endif()
 
 project(StarkwareCryptoLib VERSION 0.1.0 LANGUAGES CXX)
+
+include(${CMAKE_BINARY_DIR}/conan_paths.cmake)
+
 include(CTest)
 # Basic setup for gtest
 find_package(GTest REQUIRED)
-include_directories(${GTEST_INCLUDE_DIRS})
+find_package(gsl-lite REQUIRED)
+# include_directories(${GTest_INCLUDE_DIRS})
 enable_testing()
 include_directories("${CMAKE_SOURCE_DIR}/src")
 

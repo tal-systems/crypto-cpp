@@ -6,7 +6,7 @@
 #include <utility>
 #include <vector>
 
-#include "third_party/gsl/gsl-lite.hpp"
+#include "gsl/gsl-lite.hpp"
 
 #include "starkware/algebra/big_int.h"
 

@@ -8,7 +8,7 @@
 #include <utility>
 #include <vector>
 
-#include "third_party/gsl/gsl-lite.hpp"
+#include "gsl/gsl-lite.hpp"
 
 #include "starkware/utils/error_handling.h"
 #include "starkware/utils/prng.h"

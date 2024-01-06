@@ -3,7 +3,7 @@
 
 #include <array>
 
-#include "third_party/gsl/gsl-lite.hpp"
+#include "gsl/gsl-lite.hpp"
 
 #include "starkware/algebra/prime_field_element.h"
 #include "starkware/crypto/ffi/utils.h"
